@@ -19,17 +19,17 @@ function Skills() {
     return (
         <div className="skills" style={{backgroundColor: theme.secondary}}>
             <div className="skillsHeader">
-                <h2 style={{color: theme.primary}}>Skills</h2>
+                <h2 style={{color: theme.primary}}>Tech Stack</h2>
             </div>
             <div className="skillsContainer">
                 <div className="skill--scroll">
-                    <Marquee 
-                        gradient={false} 
-                        speed={80} 
+                    <Marquee
+                        gradient={false}
+                        speed={80}
                         pauseOnHover={true}
-                        pauseOnClick={true} 
+                        pauseOnClick={true}
                         delay={0}
-                        play={true} 
+                        play={true}
                         direction="left"
                     >
                         {skillsData.map((skill, id) => (

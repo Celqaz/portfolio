@@ -75,9 +75,16 @@ import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
 
 import canva from '../assets/svg/skills/canva.svg'
 
+// new
+import sklearn from '../assets/svg/skills/sklearn.svg'
+import azdev from '../assets/svg/skills/azdev.svg'
+import vim from '../assets/svg/skills/vim.svg'
+import linux from '../assets/svg/skills/linux.svg'
+import jenkins from '../assets/svg/skills/jenkins.svg'
 
 export const skillsImage = (skill) => {
     const skillID = skill.toLowerCase();
+    console.log('skillID: ', skillID)
     switch (skillID) {
         case 'gcp':
             return gcp;
@@ -227,6 +234,16 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
+        case 'scikit-learn':
+            return sklearn;
+        case 'azure devops':
+            return azdev;
+        case 'vim':
+            return vim
+        case 'linux':
+            return linux;
+        case 'jenkins':
+            return jenkins;
         default:
             break;
     }
