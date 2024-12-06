@@ -1,21 +1,21 @@
 export const achievementData = {
-    bio : "Putting quantified achievements on a resume is great, but I just don’t work with hard numbers. I have no data to support the quality of my work. If you have lots of relevant experience, the heading statement of your resume will be a summary.",
+    bio : "",
     achievements : [
         {
             id : 1,
-            title : 'CFA',
-            details : 'Google Cloud certifications validate your expertise and showcase your ability to transform businesses with Google Cloud technology.',
+            title : 'Financial Risk Manager (FRM)',
+            details : 'Validate te',
             date : 'Aug 20, 2019',
             field : 'Finance',
-            image : 'https://images.unsplash.com/photo-1573141597928-403fcee0e056?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80'
+            image : 'https://www.garp.org/hubfs/Portal/Certificates/certifiedFRM.png',
         },
         {
             id : 2,
-            title : 'FRM',
-            details : 'Validate technical skills and cloud expertise to grow your career and business.',
+            title : 'CFA Level 1',
+            details : 'Google Cloud certifications validate your expertise and showcase your ability to transform businesses with Google Cloud technology.',
             date : 'Aug 20, 2019',
             field : 'Finance',
-            image : 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            image : 'https://s3.amazonaws.com/com.basno.storage/instances/3h9qbm23_1733495124.png'
         },
         {
             id : 3,
@@ -23,7 +23,7 @@ export const achievementData = {
             details : 'Professional Data Engineers enable data-driven decision making by collecting, transforming, and publishing data.',
             date : 'Aug 20, 2019',
             field : 'Tech',
-            image : 'https://images.unsplash.com/photo-1489389944381-3471b5b30f04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+            image : 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png'
         }
 
     ]

@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     overflow-x: hidden;
     padding: 2rem;
 }
@@ -32,12 +32,27 @@
     justify-content: center;
 }
 
+/*.projects--bodyContainer {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    gap: 4.5rem;*/
+/*    width: 100%;*/
+/*}*/
+
+
 .projects--bodyContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4.5rem;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 columns */
+    gap: 3rem 3rem; /* space between items */
+    margin: 0 auto;
+    /*max-width: 800px; !* optional: control container width *!*/
+}
+
+@media (max-width: 768px) {
+    .projects--bodyContainer {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
+    }
 }
 
 .projects--viewAll {
@@ -45,7 +60,7 @@
     padding: 2rem;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     margin-top: 2rem;
 }
 
@@ -102,15 +117,15 @@
     .projects--viewAll a {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);  
+        transform: translateX(-50%);
     }
 }
 
 @media screen and (max-width: 400px) {
 
 }
-  
-@media only screen and (min-device-width: 320px) and (max-device-width: 
+
+@media only screen and (min-device-width: 320px) and (max-device-width:
   480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
 
 }

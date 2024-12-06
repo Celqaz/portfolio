@@ -60,7 +60,7 @@
     align-items: flex-start;
     justify-content: space-around;
     width: 65%;
-   
+
 }
 
 .achievecard-details2 {
@@ -109,7 +109,7 @@
 }
 
 .achievecard-imgcontainer > img {
-    width: 150px;
+    width: 130px;
     height: 130px;
     border-radius: 10px;
 }
@@ -131,7 +131,7 @@
         font-family: var(--primaryFont);
         font-size: 3.1rem;
     }
-    
+
     .achievement-cards {
         padding: 1rem;
         margin-left: 1%;
@@ -205,10 +205,10 @@
     }
 
     .achievecard-imgcontainer > img {
-        width: 80px;
+        width: 70px;
         height: 70px;
     }
-    
+
 }
 
 @media screen and (max-width: 600px) {
@@ -230,7 +230,7 @@
         font-size: 0.95rem;
     }
     .achievecard-imgcontainer > img {
-        width: 70px;
+        width: 60px;
         height: 60px;
     }
 

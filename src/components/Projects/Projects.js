@@ -13,19 +13,19 @@ function Projects() {
 
     const { theme } = useContext(ThemeContext);
 
-    
+
     const useStyles = makeStyles(() => ({
         viewAllBtn : {
-            color: theme.tertiary, 
+            color: theme.tertiary,
             backgroundColor: theme.primary,
             transition: 'color 0.2s',
             "&:hover": {
-                color: theme.secondary, 
+                color: theme.secondary,
                 backgroundColor: theme.primary,
             }
         },
         viewArr : {
-            color: theme.tertiary, 
+            color: theme.tertiary,
             backgroundColor: theme.secondary70,
             width: '40px',
             height: '40px',
@@ -35,7 +35,7 @@ function Projects() {
             cursor: 'pointer',
             transition: 'background-color 0.2s',
             "&:hover": {
-                color: theme.tertiary, 
+                color: theme.tertiary,
                 backgroundColor: theme.secondary,
             }
         },
@@ -52,7 +52,7 @@ function Projects() {
                     </div>
                     <div className="projects--body">
                         <div className="projects--bodyContainer">
-                            {projectsData.slice(0, 3).map(project => (
+                            {projectsData.slice(0, 6).map(project => (
                                 <SingleProject
                                     theme={theme}
                                     key={project.id}
@@ -65,7 +65,7 @@ function Projects() {
                                     image={project.image}
                                 />
                             ))}
-                        </div> 
+                        </div>
 
                         {projectsData.length > 3 && (
                             <div className="projects--viewAll">

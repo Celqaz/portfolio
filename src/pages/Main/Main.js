@@ -11,16 +11,18 @@ function Main() {
                 <title>{headerData.name} - Porfolio</title>
             </Helmet>
 
-            <Navbar />        
+            <Navbar />
             <Landing />
-            <About />
+            {/*<About />*/}
+            {/* Add courses*/}
             <Education />
+            {/* 3 columns with Data Science, Full-stack dev, could engineer*/}
             <Skills />
-            <Experience />
             <Projects />
             <Achievement />
-            <Services />
-            <Testimonials />
+            <Experience />
+            {/*<Services />*/}
+            {/*<Testimonials />*/}
             <Blog />
             <Contacts />
             <Footer />
