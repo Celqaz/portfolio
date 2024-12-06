@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Fade from 'react-reveal/Fade';
 
@@ -9,7 +9,13 @@ import expImgBlack from '../../assets/svg/experience/expImgBlack.svg'
 
 import './Experience.css'
 
-function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
+function ExperienceCard({id, company, jobtitle, startYear, endYear, description}) {
+
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const toggleDescription = () => {
+        setIsExpanded(prevState => !prevState); // Toggle expanded state
+    };
 
     const { theme } = useContext(ThemeContext);
 
@@ -35,9 +41,25 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
                     <h6 style={{color: theme.primary}}>{startYear}-{endYear}</h6>
                     <h4 style={{color: theme.tertiary}}>{jobtitle}</h4>
                     <h5 style={{color: theme.tertiary80}}>{company}</h5>
+                    {/*<button  onClick={toggleDescription}  style={{*/}
+                    {/*    backgroundColor: theme.secondary,*/}
+                    {/*    color: theme.primary,*/}
+                    {/*    border: 'none',*/}
+                    {/*    padding: '0.5rem 1rem',*/}
+                    {/*    cursor: 'pointer',*/}
+                    {/*    borderRadius: '5px',*/}
+                    {/*    marginTop: '1rem',*/}
+                    {/*}} >hi</button>*/}
+                    {/*{isExpanded ? 'Hide Details' : 'Show Details'}*/}
+                    {/*/!*</button>*!/*/}
+                    {/*{isExpanded && (*/}
+                    {/*    <p className="detailed-description" style={{ color: theme.tertiary60, marginTop: '1rem' }}>*/}
+                    {/*        {description}*/}
+                    {/*    </p>*/}
+                    {/*)}*/}
                 </div>
             </div>
-        </Fade>   
+        </Fade>
     )
 }
 
