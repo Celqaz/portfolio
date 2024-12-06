@@ -167,7 +167,7 @@ function Landing() {
                             {headerData.resumePdf && (
                                 <a
                                     href={headerData.resumePdf}
-                                    download='resume'
+                                    download='CV_Bin Li'
                                     target='_blank'
                                     rel='noreferrer'
                                 >

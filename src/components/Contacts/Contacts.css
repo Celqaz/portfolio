@@ -64,12 +64,12 @@
 .form-input {
     height: 50px;
     box-sizing: border-box;
-    border-radius: 50px; 
+    border-radius: 50px;
     outline: none;
     margin-bottom: 2rem;
     padding: 0.7rem 0.7rem;
     border-radius: 20px;
-    width: 100%; 
+    width: 100%;
     resize: none;
 }
 
@@ -78,7 +78,7 @@
 .form-message {
     height: 150px;
     box-sizing: border-box;
-    border-radius: 50px; 
+    border-radius: 50px;
     outline: none;
     margin-bottom: 2rem;
     padding: 0.7rem 0.7rem;
@@ -162,9 +162,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     gap: 1.5rem;
-    margin-top: 4rem;
+    /*margin-top: 4rem;*/
 }
 
 
@@ -224,7 +224,7 @@
         flex: 1;
         width: 80%;
     }
-    
+
     .form-input {
         margin-bottom: 0.45rem;
     }
@@ -272,8 +272,8 @@
     }
     .submit-btn{align-self: center;}
 }
-  
-@media only screen and (min-device-width: 320px) and (max-device-width: 
+
+@media only screen and (min-device-width: 320px) and (max-device-width:
   480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
     .contacts-details {
         padding-left: 0rem;
@@ -325,7 +325,7 @@
         transform: rotate(0deg);
         }
         20%{
-        transform: translateX(-10px);    
+        transform: translateX(-10px);
         }
         70%{
           transform: translateX(60px);
