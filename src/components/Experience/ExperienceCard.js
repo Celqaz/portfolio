@@ -11,11 +11,11 @@ import './Experience.css'
 
 function ExperienceCard({id, company, jobtitle, startYear, endYear, description}) {
 
-    const [isExpanded, setIsExpanded] = useState(false);
-
-    const toggleDescription = () => {
-        setIsExpanded(prevState => !prevState); // Toggle expanded state
-    };
+    // const [isExpanded, setIsExpanded] = useState(false);
+    //
+    // const toggleDescription = () => {
+    //     setIsExpanded(prevState => !prevState); // Toggle expanded state
+    // };
 
     const { theme } = useContext(ThemeContext);
 
